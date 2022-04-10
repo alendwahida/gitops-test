@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: base
-        image: 128150454185.dkr.ecr.us-east-1.amazonaws.com/sosialmedia:latest
+        image: 128150454185.dkr.ecr.us-east-1.amazonaws.com/sosialmedia:
         ports:
         - containerPort: 8080
