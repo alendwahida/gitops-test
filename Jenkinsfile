@@ -12,7 +12,8 @@ pipeline {
                 sh "cat staging/deployment.yaml"
                 sh "git add ."
                 sh "git commit -m '$IMAGE_TAG'"
-                sh "git push -u origin HEAD:main"
+                sh "git tag '$IMAGE_TAG'"
+                sh "git push origin main"
             }
         }
     }
