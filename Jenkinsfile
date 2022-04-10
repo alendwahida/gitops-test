@@ -13,6 +13,7 @@ pipeline {
                 sh "git add ."
                 sh "git commit -m '$IMAGE_TAG'"
                 sh "git tag '$IMAGE_TAG'"
+                sh "git status"
                 sh "git push origin main"
             }
         }
