@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: sosialmedia-staging
-        image: 128150454185.dkr.ecr.us-east-1.amazonaws.com/sosialmedia:021ebc3310c955909d0f0324d6a33c47d80ea41a
+        image: 128150454185.dkr.ecr.us-east-1.amazonaws.com/sosialmedia:8ce158019a38f2e55b9479b79563394358726316
         ports:
         - containerPort: 80
