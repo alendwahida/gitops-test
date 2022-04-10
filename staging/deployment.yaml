@@ -6,7 +6,7 @@ spec:
   selector:
     matchLabels:
       app: sosialmedia-staging
-  replicas: 5        # tells deployment to run 2 pods matching the template
+  replicas: 2        # tells deployment to run 2 pods matching the template
   template:          # create pods using pod definition in this template
     metadata:
       labels:
@@ -16,4 +16,4 @@ spec:
       - name: sosialmedia-staging
         image: 128150454185.dkr.ecr.us-east-1.amazonaws.com/sosialmedia:021ebc3310c955909d0f0324d6a33c47d80ea41a
         ports:
-        - containerPort: 8080
+        - containerPort: 80
