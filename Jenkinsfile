@@ -11,7 +11,7 @@ pipeline {
                 sh "sed -i 's+com/sosialmedia. *+com/sosialmedia:$IMAGE_TAG+g' staging/deployment.yaml"
                 sh "cat staging/deployment.yaml"
                 sh "git add ."
-                sh "git commit -m 'commit : $IMAGE_TAG'"
+                sh "git commit -m '$IMAGE_TAG'"
                 sh "git push origin HEAD:main"
             }
         }
