@@ -3,6 +3,8 @@ pipeline {
     stages {
         stage('Update Image Version Deployment K8s') {
             steps {
+                sh "git config user.email alendwahida@gmail.com"
+                sh "git config user.name alendwahida"
                 sh "ls"
                 sh "printenv"
                 sh "cat staging/deployment.yaml"
