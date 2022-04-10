@@ -6,7 +6,7 @@ pipeline {
                 sh "ls"
                 sh "printenv"
                 sh "cat staging/deployment.yaml"
-                sh "sed -i 's+alendwahida/gitops-test. *+alendwahida/gitops-test:$IMAGE_TAG+g' gitops-test/staging/deployment.yaml"
+                sh "sed -i 's+alendwahida/gitops-test. *+alendwahida/gitops-test:$IMAGE_TAG+g' staging/deployment.yaml"
                 sh "cat staging/deployment.yaml"
             }
         }
