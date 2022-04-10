@@ -14,7 +14,7 @@ pipeline {
                 sh "git commit -m '$IMAGE_TAG'"
                 sh "git tag '$IMAGE_TAG'"
                 sh "git status"
-                sh "git push origin main"
+                sh "git push -u origin main"
             }
         }
     }
