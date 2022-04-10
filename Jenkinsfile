@@ -8,7 +8,7 @@ pipeline {
                 sh "ls"
                 sh "printenv"
                 sh "cat staging/deployment.yaml"
-                sh "sed -i 's+com/$PROJECT_NAME:*+com/$PROJECT_NAME:$IMAGE_TAG+g' staging/deployment.yaml"
+                sh "sed -i 's+com/$PROJECT_NAME.*+com/$PROJECT_NAME:$IMAGE_TAG+g' staging/deployment.yaml"
                 sh "cat staging/deployment.yaml"
                 sh "git add ."
                 sh "git commit -m '$IMAGE_TAG'"
