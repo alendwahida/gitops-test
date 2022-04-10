@@ -2,7 +2,7 @@ pipeline {
     agent any
     stages {
         stage('Update Image Version Deployment K8s') {
-            steps {
+            script {
                 sh "git config user.email alendwahida@gmail.com"
                 sh "git config user.name alendwahida"
                 sh "ls"
@@ -12,7 +12,7 @@ pipeline {
                 sh "cat staging/deployment.yaml"
                 sh "git add ."
                 sh "git commit -m 'commit : $IMAGE_TAG'"
-                sh "git push origin main"
+                sh "git push origin HEAD:main"
             }
         }
     }
