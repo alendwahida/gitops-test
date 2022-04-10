@@ -2,7 +2,7 @@ pipeline {
     agent any
     stages {
         stage('Update Image Version Deployment K8s') {
-            script {
+            steps {
                 sh "git config user.email alendwahida@gmail.com"
                 sh "git config user.name alendwahida"
                 sh "ls"
