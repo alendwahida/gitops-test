@@ -14,7 +14,7 @@ pipeline {
                 sh "git commit -m '$IMAGE_TAG'"
                 sh "git tag '$IMAGE_TAG'"
                 sh "git status"
-                sh "git push -u origin HEAD:main"
+                sh "git push https://$GIT_USERNAME:$GIT_PASSWORD@github.com/alendwahida/gitops-test.git HEAD:main"
             }
         }
     }
