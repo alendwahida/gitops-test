@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: base
-        image: 128150454185.dkr.ecr.us-east-1.amazonaws.com/sosialmedia:2a01480eb0eb6eea083a84bbaa074d3690d720cdeb0668656051b174fdc75f900f5ab58f526fa0bc5f8134ec2b54131816db7d4b63202f56a18b0891
+        image: 128150454185.dkr.ecr.us-east-1.amazonaws.com/sosialmedia:c4dcdb9d08ca9f19ecb4d72d8cecbad7703f01ad2a01480eb0eb6eea083a84bbaa074d3690d720cdeb0668656051b174fdc75f900f5ab58f526fa0bc5f8134ec2b54131816db7d4b63202f56a18b0891
         ports:
         - containerPort: 8080
