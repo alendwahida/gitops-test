@@ -6,7 +6,7 @@ spec:
   selector:
     matchLabels:
       app: sosialmedia-staging
-  replicas: 4        # tells deployment to run 2 pods matching the template
+  replicas: 10      # tells deployment to run 2 pods matching the template
   template:          # create pods using pod definition in this template
     metadata:
       labels:
