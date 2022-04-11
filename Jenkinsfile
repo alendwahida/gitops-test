@@ -11,8 +11,8 @@ pipeline {
                 sh "sed -i 's+com/$PROJECT_NAME.*+com/$PROJECT_NAME:$IMAGE_TAG+g' staging/deployment.yaml"
                 sh "cat staging/deployment.yaml"
                 sh "git add ."
-                sh "git commit -m '$IMAGE_TAG'"
-                sh "git tag 'Image update: $IMAGE_TAG'"
+                sh "git commit -m 'Image Version: $IMAGE_TAG'"
+                sh "git tag '$IMAGE_TAG'"
                 sh "git status"
                 sh "git push https://$GIT_TOKEN@github.com/alendwahida/gitops-test.git HEAD:main"
             }
