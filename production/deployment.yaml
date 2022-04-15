@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sosialmedia-production-deployment
+spec:
+  selector:
+    matchLabels:
+      app: sosialmedia-production
+  replicas: 5
+  template: 
+    metadata:
+      labels:
+        app: sosialmedia-production
+    spec:
+      containers:
+      - name: sosialmedia-production
+        image: 128150454185.dkr.ecr.us-east-1.amazonaws.com/sosialmedia:f53d928b807cc2c28d8d7a6a0d05588ef583420a
+        ports:
+        - containerPort: 80
